@@ -1,0 +1,326 @@
+// Remove footer margin
+body.index footer
+  margin: 0
+
+// Landing and coworkers section
+.landing, .coworkers
+  float: left
+  width: 100%
+  background-color: $orange
+
+.landing
+  padding: 130px 0 60px 0px
+
+.coworkers
+  padding: 80px 0px 60px 0px
+
+.landing-image img
+  width: 100%
+
+// Landing section
+.tagline-container, .coworkers-container
+  +row
+
+  .tagline
+    +span-columns(12)
+
+    +media($medium-screen)
+      +span-columns(12)
+
+    +media($large-screen)
+      +span-columns(11 of 24)
+
+.landing-content, .coworkers-content
+  +row
+
+.landing-paragraph
+  +span-columns(12)
+
+  +media($medium-screen)
+    +span-columns(12 of 24)
+    margin-top: 12px
+
+  +media($large-screen)
+    +span-columns(9 of 24)
+    margin-top: 12px
+
+  h2
+    font-size: $h1-font-size
+    margin-top: 40px
+
+.landing-image
+  display: none
+
+  +media($medium-screen)
+    +span-columns(12 of 24)
+
+  +media($large-screen)
+    +span-columns(15 of 24)
+
+// Coworkers section
+.coworkers-paragraph .contact-button
+  margin-top: 8px
+
+.coworkers-paragraph
+  +span-columns(12)
+
+  +media($medium-screen)
+    +span-columns(10)
+
+  +media($large-screen)
+    +span-columns(9 of 24)
+    margin-top: 12px
+
+.coworkers-image
+  +span-columns(12)
+
+  +media($large-screen)
+    margin-top: 30px
+    +span-columns(15 of 24)
+
+// Activate strategy section
+.activate-strategy
+  float: left
+  width: 100%
+  padding: 70px 0
+
+.activate-strategy-headline, .activate-strategy-content
+  +span-columns(12)
+
+  +media($large-screen)
+    +span-columns(6)
+    +omega(2n)
+
+.activate-strategy-headline
+  margin-top: 25px
+
+  h1
+    color: $orange
+
+.activate-strategy-content
+  +span-columns(12)
+
+  +media($medium-screen)
+    +span-columns(6)
+  
+  +media($large-screen)
+    padding: 0px 30px
+
+  p
+    color: $secondary-font-color
+
+.activate-strategy-process-grid
+  +row
+  float: left
+
+  .activate-strategy-process, .activate-strategy-process-beige
+    +span-columns(12)
+
+    +media($large-screen)
+      width: 50%
+      margin-top: 30px
+      margin-right: 0
+
+  .activate-strategy-process
+    padding: 20px 45px 20px 25px
+
+  .activate-strategy-process-beige
+    padding: 20px 35px
+
+  .activate-strategy-process-beige
+    background-color: $light-gray
+    border-radius: 50px
+
+  .perspective, .position, .plan, .pattern
+    +span-columns(12)
+    text-align: center
+
+    +media($medium-screen)
+      +span-columns(6)
+      width: 46%
+      margin-right: 8%
+
+    h2, p
+      color: $secondary-font-color
+
+    h2
+      margin-top: 12px
+
+    p
+      margin: 0
+
+  .plan
+    margin-bottom: 20px
+
+    +media($medium-screen)
+      margin-bottom: 0
+
+// Goals section
+.goals
+  float: left
+  width: 100%
+  padding: 0 0 80px 0
+
+  +media($large-screen)
+    padding: 120px 0 0 0
+
+.goals-image
+  +span-columns(12)
+  margin-bottom: 30px
+
+  +media($medium-screen)
+    +span-columns(8)
+    +shift(4)
+
+  +media($large-screen)
+    +span-columns(7)
+    +shift(0)
+    margin-bottom: 0
+
+  img
+    float: left
+
+.goals-paragraph
+  +span-columns(12)
+
+  +media($medium-screen)
+    +span-columns(10)
+
+  +media($large-screen)
+    +span-columns(5)
+    padding: 15px
+
+  h1
+    color: $orange
+    margin-bottom: 12px
+
+  p
+    color: $secondary-font-color
+
+// Corehub section
+.corehub
+  float: left
+  width: 100%
+  background-color: $orange
+  padding: 80px 0 0 0
+
+.corehub-paragraph
+  +span-columns(12)
+
+  +media($medium-screen)
+    +span-columns(10)
+
+  +media($large-screen)
+    +span-columns(5)
+
+  h1
+    margin-bottom: 12px
+
+.corehub-button
+  +span-columns(12)
+
+  +media($large-screen)
+    +span-columns(3)
+
+.corehub-image
+  +span-columns(12)
+  margin-top: 20px
+
+  +media($medium-screen)
+    +span-columns(10)
+    +shift(1)
+
+  +media($large-screen)
+    +span-columns(17 of 24)
+    +shift(0.5)
+    margin-top: -50px
+
+  img
+    float: left
+
+// Testomonials section
+.testomonials
+  float: left
+  width: 100%
+  padding: 140px 0
+
+.testomonials-image
+  +span-columns(4)
+  +shift(4)
+
+  +media($medium-screen)
+    +span-columns(2)
+    +shift(0)
+
+  +media($large-screen)
+    +span-columns(3)
+
+.testomonials-paragraph
+  +span-columns(12)
+  margin: 20px 0px
+
+  +media($medium-screen)
+    +span-columns(8)
+    text-align: center
+    margin: 0
+
+  +media($large-screen)
+    +span-columns(6)
+    padding: 0 40px
+
+  h1
+    color: $orange
+    margin-bottom: 12px
+
+  p
+    color: $secondary-font-color
+
+// Contact section
+.contact
+  float: left
+  width: 100%
+  background-color: $orange
+  padding: 110px 0px
+
+.contact-paragraph
+  +span-columns(12)
+
+  +media($medium-screen)
+    +span-columns(10)
+
+  +media($large-screen)
+    +span-columns(5)
+
+  h1
+    margin-bottom: 12px
+
+.contact-image
+  display: none
+
+  +media($medium-screen)
+    +span-columns(6)
+
+  +media($large-screen)
+    +span-columns(4)
+    padding: 0px 10px
+
+.contact-lists
+  +span-columns(12)
+  margin-top: 20px
+
+  +media($medium-screen)
+    +span-columns(6)
+    margin-top: 0
+
+  +media($large-screen)
+    +span-columns(3)
+
+  ul
+    margin-bottom: 24px
+
+    a
+      color: #FFF
+
+      &:hover
+        color: #FFF
+        text-decoration: underline

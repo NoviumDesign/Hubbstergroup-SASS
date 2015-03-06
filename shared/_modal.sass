@@ -1,0 +1,53 @@
+#contactModal
+  display: none
+  background: #FFF
+  max-width: 95%
+  padding: 10px 15px
+
+  +media($medium-screen)
+    width: 75%
+    padding: 25px 35px
+
+  +media($large-screen)
+    width: 50%
+
+  h1
+    color: $orange
+
+  p, span
+    color: $secondary-font-color
+
+  .form-row
+    +row
+    margin-bottom: 12px
+
+    label
+      color: $secondary-font-color
+
+    textarea
+      width: 100%
+
+  .has-error input, textarea
+    margin-bottom: 4px
+
+
+.cat_button
+  float: right
+  margin-top: 6px
+
+  &:hover
+    color: #FFF !important
+
+.b-close
+  position: absolute
+  top: 0
+  right: 0
+  background-color: $orange
+  padding: 2px 8px
+
+  &:hover
+    cursor: pointer
+    background-color: lighten($orange, 15)
+
+  img
+    height: 12px

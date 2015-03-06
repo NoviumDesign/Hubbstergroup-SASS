@@ -1,0 +1,29 @@
+button,
+input[type="submit"] {
+  @extend %button;
+  @include appearance(none);
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  outline: none;
+  white-space: nowrap;
+  font-family: $base-font-family;
+  font-weight: normal !important;
+}
+
+.contact-button {
+  display: inline-block;
+  background-color: $orange;
+  color: #FFF;
+  padding: 18px 26px;
+  border: 2px solid #FFF;
+  border-radius: 12px;
+  margin-top: 4px;
+
+  &:hover {
+    @include transition(all 0.2s);
+    background-color: #FFF;
+    color: $orange;
+  }
+}

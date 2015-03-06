@@ -1,0 +1,85 @@
+$header-height: 48px
+
+.site-header
+  width: 100%
+  position: fixed
+  top: 0
+  background-color: $light-gray
+
+.header-container
+  +outer-container
+  position: relative
+  padding: 8px 20px 0px 20px
+
+  .logo
+    float: left
+    img
+      float: left
+      max-height: 3em
+
+#nav-button
+  text-transform: uppercase
+  font-size: 16px
+  float: right
+  padding: 11px 0 10px 0
+  background: none
+  color: $secondary-font-color
+
+  &:hover
+    background: none
+
+  img
+    margin-right: 9px
+
+nav.menu
+  display: none
+  position: absolute
+  top: 100%
+  left: 21px
+  right: 20px
+  background-color: $light-gray
+  padding: 20px 30px
+
+  &:after
+    content: " "
+    position: absolute
+    bottom: 100%
+    right: 25px
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 0 10px 10px 10px
+    border-color: transparent transparent $light-gray transparent
+
+nav.active
+  display: block
+
+.nav-section, .nav-section-services
+  +span-columns(12)
+  margin-bottom: 12px
+
+  +media($medium-screen)
+    +span-columns(4)
+    margin-bottom: 0
+
+  h3
+    color: $orange
+
+  p, span, a, h4
+    color: $secondary-font-color
+
+  a:hover
+    color: $secondary-font-color
+    text-decoration: underline
+
+.nav-section-services
+  border-bottom: 1px solid $orange
+  padding-bottom: 10px
+  margin-bottom: 20px
+
+  +media($medium-screen)
+    border-bottom: none
+    padding-bottom: 0
+    margin-bottom: 0
+    border-right: 1px solid $orange
+    padding-right: 25px
